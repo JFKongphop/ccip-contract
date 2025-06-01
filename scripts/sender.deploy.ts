@@ -21,7 +21,10 @@ const deploy = async () => {
     await hre.run('verify:verify', {
       address: contractAddress,
       contract: `contracts/${name}.sol:${name}`,
-      constructorArguments: [],
+      constructorArguments: [
+        '0x0BF3dE8c5D3e8A2B34D2BEeB17ABfCeBaf363A59',
+        '0x779877A7B0D9E8603169DdbD7836e478b4624789'
+      ],
     });
   }
   catch (e) {

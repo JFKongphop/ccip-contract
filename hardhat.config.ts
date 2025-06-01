@@ -44,14 +44,14 @@ const config: HardhatUserConfig = {
     }
   },
   etherscan: {
-    apiKey: process.env.SCROLL_API_KEY! || process.env.ETHERSCAN_API_KEY!,
+    apiKey: process.env.ETHERSCAN_API_KEY! || process.env.SCROLL_API_KEY!,
     customChains: [
       {
-        network: "holesky",
+        network: "sepolia",
         chainId: 17000,
         urls: {
-          apiURL: "https://api-holesky.etherscan.io/api",
-          browserURL: "https://holesky.etherscan.io"
+          apiURL: "https://api-sepolia.etherscan.io/api",
+          browserURL: "https://sepolia.etherscan.io"
         }
       },
       {
@@ -59,7 +59,7 @@ const config: HardhatUserConfig = {
         chainId: 534351,
         urls: {
           apiURL: "https://api-sepolia.scrollscan.com/api",
-          browserURL: "https://sepolia.scrollscan.co"
+          browserURL: "https://sepolia.scrollscan.com"
         }
       }
     ]

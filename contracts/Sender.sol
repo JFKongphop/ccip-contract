@@ -46,7 +46,7 @@ contract Sender is OwnerIsCreator {
   /// @param text The string text to be sent.
   /// @return messageId The ID of the message that was sent.
   function sendMessage(
-    uint64 destinationChainSelector,
+    uint64 destinationChainSelector, // 2279865765895943307
     address receiver,
     string calldata text
   ) external onlyOwner returns (bytes32 messageId) {

@@ -15,3 +15,6 @@ ds:
 
 dr:
 	npx hardhat run --network ${chain} scripts/receiver.deploy.ts
+
+cs:
+	node shortcuts/sender.js
