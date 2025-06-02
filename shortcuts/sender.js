@@ -24,7 +24,7 @@ const execution = async () => {
 
   const receipt = await tx.wait();
 
-  console.log('HASH:', receipt.hash);
+  console.log('DATA:', receipt);
 };
 
 execution().catch((error) => {

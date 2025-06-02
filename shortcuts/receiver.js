@@ -16,15 +16,9 @@ const execution = async () => {
   const wallet = new ethers.Wallet(privateKey, provider);
   const contract = new ethers.Contract(contractAddress, contractABI, wallet);
 
-  const tx = await contract.sendMessage(
-    '2279865765895943307',
-    '0xFebd4eDc1d914669A40BE5221852feCdBD066DF5',
-    'Hello World Chainlink'
-  );
+  const result = await contract.getLastReceivedMessageDetails();
 
-  const receipt = await tx.wait();
-
-  console.log('HASH:', receipt.hash);
+  console.log('MESSAGE:', result);
 };
 
 execution().catch((error) => {

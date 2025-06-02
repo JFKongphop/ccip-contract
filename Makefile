@@ -18,3 +18,6 @@ dr:
 
 cs:
 	node shortcuts/sender.js
+
+cr:
+	node shortcuts/receiver.js
