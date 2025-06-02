@@ -3,11 +3,13 @@
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^5.0.0",
     "@openzeppelin/contracts": "5.0.2",
+    "@types/snarkjs": "^0.7.9",
     "dotenv": "^16.4.5",
     "hardhat": "^2.22.12"
   },
   "dependencies": {
     "@chainlink/contracts": "^1.4.0",
-    "@chainlink/contracts-ccip": "^1.6.0"
+    "@chainlink/contracts-ccip": "^1.6.0",
+    "snarkjs": "^0.7.5"
   }
 }

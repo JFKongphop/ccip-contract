@@ -21,3 +21,6 @@ cs:
 
 cr:
 	node shortcuts/receiver.js
+
+fork:
+	npx hardhat test test/fork.ts
