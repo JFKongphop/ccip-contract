@@ -27,8 +27,8 @@ describe('Contract', async () => {
         'y': 4
       });
 
-      const data = await decodeProof.extractProof(proofs);
-      console.log(data);
+      const result = await decodeProof.extractProof(proofs);
+      expect(result).true;
     });
   })
 });
