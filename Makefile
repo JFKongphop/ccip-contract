@@ -24,3 +24,6 @@ cr:
 
 fork:
 	npx hardhat test test/fork.ts
+
+csb:
+	node shortcuts/check-sender-balance.js

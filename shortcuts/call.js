@@ -18,6 +18,6 @@ const execution = async () => {
 };
 
 execution().catch((error) => {
-  console.error("Error deploying contract:", error);
+  console.error("Error contract:", error);
 });
 
